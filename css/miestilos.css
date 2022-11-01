@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border-bottom:auto;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1300px;
+    overflow: hidden;
+    margin: auto;
+    padding: 80px 0;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.349) 0%, rgba(51, 8, 103, 0.418)100%), url(../img/franco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head {
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hamburguesa {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0,0, .7);
+}
+
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform 6 ease-in-out;
+    transform: translate(100%); 
+    box-shadow: 0 0 20px rgba(0,0,0,.8) ;
+}
+
+.spread { 
+    transform: translate(0);
+}
+
+.menu-navegacion a {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+.titulo {
+    font-size: 60px;
+    margin-bottom: 18px;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+/*  Nuestro servicio */
+
+.subtitulo {
+    text-align: center;
+    font-weight: 400;
+    color: #002555;
+    margin-bottom: 36px;
+    font-size: 45px;
+}
+
+.contenedor-servicio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img {
+    width: 50%;
+
+}
+
+.checklist-servicio {
+    width: 45%;
+}
+
+.servicio {
+    margin-bottom: 20px;
+}
+
+.n-servicio {
+    margin-bottom: 8px;
+    color: #002555;
+}
+
+.numero {
+    display: inline-block;
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 800;
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+.galeria {
+    background: #f3f3f3;
+}
+   
+.contenedor-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria { 
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 16px;
+    box-shadow: 0 0 8px rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+.imagen-light {
+    position: fixed;
+    background: rgba(0, 0, 0,.6);
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: tranform 1s ease-in-out;
+}
+
+.show {
+    transform: translate(0);
+}
+
+.agregar-imagen {
+    object-fit: cover;
+    width: 40%;
+    height: 60%;
+    border-radius: 18px;
+    transform: scale(0);
+    transition: trasnform .8s .8s;
+
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.experts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-expert {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.cont-expert img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n-expert {
+    display: inline-block;
+    margin-top: 25px;
+    width: 100%;
+    font-weight: 800;
+}
+
+/* Footer */
+
+footer {
+    background: #002555;
+    padding-bottom: 0.3px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.contaco-us {
+    width: 40%;
+    color: #fff;
+}
+
+.brand {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.brand+p {
+    font-weight: 400;
+}
+
+.social-media {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon {
+    display:inline-block;
+    margin-left: 25px;
+    width: 60px;
+    height: 65px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover {
+    background: #fff;
+    color: #002555;
+}
+
+.social-media-icon i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line {
+    width: 90%;
+    max-width:1200px ;
+    margin: 0 auto;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px) {
+    .menu-navegacion {
+        width: 50vw;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img {
+        width: 80%;
+    }
+    .checklist-servicio {
+        width: 80%;
+    }
+
+    .servicio {
+        margin-bottom: 30px;
+    }
+    
+    .agregar-imagen {
+        width: 80%;
+    }
+    
+    .img-galeria {
+        width: 45%;
+    }
+
+    .cont-expert {
+        width: 80%;
+    }
+    .footer-content {
+        justify-content: center;
+    }
+
+    .social-media {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon {
+        margin-left: 0 ;
+    }
+
+    .social-media i {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .contaco-us {
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .menu-navegacion {
+        width: 60vw;
+    }
+
+    .hamburguesa {
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo {
+        font-size: 26px;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+    }
+
+    .agregar-imagen {
+        width: 95%;
+    }
+
+    .img-galeria {
+        width: 85%;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .contaco-us {
+        width: 80%;
+    }
+
+    
+}
